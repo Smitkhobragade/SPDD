@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Product Feedback</title>
+  <style>
+    /* CSS for star rating */
+    .rating {
+      /* display: inline-block; */
+      font-size: 0;
+      display: flex;
+      flex-direction: row-reverse;
+      position: relative;
+      /* left: -500px; */
+      /* top: -20px; */
+
+    }
+    
+    .rating input {
+      display: none;
+      align-self: flex-start;
+    }
+    
+    .rating label {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    
+    .rating label:before {
+      content: '\2605';
+      line-height: 30px;
+    }
+    
+    .rating input:checked~label {
+      color: #ff0;
+    }
+    
+    .rating label:hover,
+    .rating label:hover~label,
+    .rating input:checked~label,
+    .rating input:checked~label~label {
+      color: #ff0;
+    }
+
+    body{
+      background-color: #009dfa;
+      display: flex;
+      flex-direction: column;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body div{
+      width: 100%;
+      align-self: center;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+    }
+
+    form div{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+
+    form div input{
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .submit{
+      background-color: #009dfa;
+      color: #fff;
+      outline: none;
+      border: 2px solid #fff;
+      padding: 10px;
+      transition: 0.5s;
+      margin-top: 10px;
+    }
+
+    .submit:hover{
+      background: #fff;
+      color: #009dfa;
+    }
+
+    textarea{
+      padding: 10px;
+    }
+    
+    .center{
+      align-self: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex;flex-direction: column;margin-top: 150px;">
+
+  
+  <h1 class="center">Product Feedback</h1>
+  
+  <form>
+    <div>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Name">
+    </div>
+    
+    <div>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Email">
+    </div>
+    
+    <div>
+      <label for="rating">Rating:</label>
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1"></label>
+      </div>
+    </div>
+    
+    <div>
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" required placeholder="Enter the feedback"></textarea>
+    </div>
+    
+    <div>
+      <input type="submit" value="Submit" class="submit">
+    </div>
+  </form>
+
+</div>
+</body>
+
+</html>

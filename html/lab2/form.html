@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Form</title>
+</head>
+<body>
+
+  <div class="form">
+    <h2>Event Registration</h2>
+    <form>
+      <div class="main-form">
+        <div class="left">
+          <input type="text" name="" id="" placeholder="First Name" required>
+          <input type="text" name="" id="" placeholder="Last Name" required>
+          <input type="text" placeholder="College">
+          <input type="text" placeholder="Dept">
+          <textarea name="" id="" cols="20" rows="5" placeholder="Address"></textarea>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone Number">
+          <span class="gender">
+            <span >Gender : </span>
+            <div>
+              <input type="radio" name="a" id="" >
+              <label>Male</label>
+            </div>
+            <div>
+              <input type="radio" name="a" id="" >
+              <label>Female</label>
+            </div>
+          </span>
+          <span class="Programme">
+            <span >Programme : </span>
+            <div>
+              <input type="radio" name="b" id="" >
+              <label>B.Tech</label>
+            </div>
+            <div>
+              <input type="radio" name="b" id="" >
+              <label for="">M.Tech</label>
+            </div>
+          </span>
+        </div>
+
+        <div class="right">
+          <span class="class">
+            <label for="">Class</label> 
+            <select name="" id="">
+              <option value="" hidden></option>
+              <option value="">IX</option>
+              <option value="">X</option>
+              <option value="">XI</option>
+              <option value="">XII</option>
+          </select>
+          </span>
+          <span class="City">
+            <label for="">City</label> 
+            <select name="" id="">
+              <option value="" hidden> </option>
+              <option value="">Nagpur</option>
+              <option value="">Aurangabad</option>
+              <option value="">Shimla</option>
+              <option value="">Tamil Nadu</option>
+          </select>
+          </span>
+          <span class="State">
+            <label for="">State</label> 
+            <select name="" id="">
+              <option value="" hidden> </option>
+              <option value="">Maharashtra</option>
+              <option value="">Madhya Pradesh</option>
+              <option value="">Punjab</option>
+              <option value="">Rajasthan</option>
+          </select>
+          </span>
+          <span class="event">
+            <p>EVENT : </p>
+            <div>
+              <input type="checkbox">
+              <label for="">EVENT 1</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label for="">EVENT 2</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label for="">EVENT 3</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label for="">EVENT 4</label>
+            </div>
+          </span>
+          <input type="text" placeholder="Amout Paid">
+          <input type="text" placeholder="Transaction ID">
+          <span class="Professional">
+            <p>Professional : </p>
+            <div>
+              <input type="checkbox">
+              <label for="">CSE</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label for="">ICSE</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label for="">ISTC</label>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label for="">IST</label>
+            </div>
+          </span>
+        </div>        
+      </div>
+
+      <div class="btns">
+        <span class="btns-1">
+          <button>Reset</button>
+          <button>Ok</button>
+        </span>
+        <button>Submit</button>
+      </div>
+
+
+    </form>
+  </div>
+
+
+</body>
+</html>

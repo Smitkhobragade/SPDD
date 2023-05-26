@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins',sans-serif;
+}
+.navbar{
+  display: flex;
+  flex-direction: column;
+  background-color: #009dfa;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+ul{
+  display: flex;
+  align-self: flex-end;
+  margin: 10px;
+  margin-right: 50px;
+
+}
+ul li{
+  list-style: none;
+  margin: 5px;
+  font-size: larger;
+  margin-left: 20px;
+}
+.buying{
+  display: flex;
+  margin: 15px;
+  margin-top: 30px;
+  overflow: scroll;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid #000; */
+  margin: 10px;
+  margin-right: 40px;
+}
+.image img{
+  width: 300px;
+  transition: 0.25s;
+}
+.image img:hover{
+  transform: scale(1.1);
+}
+.info{
+  display: flex;
+  flex-direction: column;
+}
+.info h3{
+  color: #aadffa;
+  align-self: center;
+  font-size: xx-large;
+}
+.cutted-price{
+  text-decoration: line-through;
+}
+footer{
+  margin-top: 40px;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.made-with{
+  padding: 10px;
+  margin-top: 10px;
+  align-self: center;
+}

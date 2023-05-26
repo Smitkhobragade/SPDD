@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab1</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background: crimson;
+    }
+    .persp{
+      perspective: 800;    
+    }
+    @keyframes new{
+      0%{
+        background: red;
+      }
+      100%{
+        background: blue;
+      }
+    }
+    .cube{
+      transform-style: preserve-3d;
+      transform: rotateX(-45deg) rotateY(30deg);
+      /* animation: new linear infinite; */
+      animation-name: new;
+      animation-duration: 4s;
+    }
+    .sides{
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      background-color:#33333373 ;
+      position: absolute;
+      border: 1px solid #fff;
+    }
+    .side3{
+      transform: translateZ(-50px);
+    }
+    .side2{
+      transform: rotateY(-90deg) translateZ(50px) translateX(20px) translateY(-50px);
+    }
+    .side4{
+      transform: rotateY(-90deg) translateZ(-10px) translateY(-30px);
+    }
+    .side5{
+      transform: rotateX(90deg) translateX(-14px) translateZ(5px);
+    }
+    .side6{
+      transform: rotateX(90deg) translateX(-14px) translateZ(53px);
+    }
+
+    
+
+
+  </style>
+</head>
+<body>
+
+  <div class="persp">
+    <div class="cube">
+      <h1 class="sides side1"></h1>
+      <h1 class="sides side2"></h1>
+      <h1 class="sides side3"></h1>
+      <h1 class="sides side4"></h1>
+      <h1 class="sides side5"></h1>
+      <h1 class="sides side6"></h1>
+    </div>
+  </div> 
+
+</body>
+</html>

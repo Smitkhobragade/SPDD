@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap);
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins',sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+.calc{
+  transform: scale(1.5);
+  padding: 20px;
+  border-radius: 20px;
+  /* background: rgb(43, 186, 18); */
+  /* background-color: #e0e0e0; */
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 5px #ff1178,
+  0px 0px 10px #ff1178,
+  inset 0px 0px 5px #ff1178,
+  inset 0px 0px 10px #ff1178;
+  text-shadow: 0px 0px 5px #ff1178,
+   0px 0px 10px #ff1178,
+   0px 0px 15px #ff1178,
+   0px 0px 20px #ff1178;
+}
+input{
+  padding: 10px;
+  margin: 2px;
+  margin-top: 5px;
+  color: #fff;
+  background: #000;
+  outline: none;
+  /* border: 2px solid #fff; */
+  border: 2px solid #ffffff00;
+  width: 40px;
+  border-radius: 20px;
+}
+.display{
+  margin-bottom: 10px;
+}
+.display input{
+  width: 160px;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 5px #0ff0fc,
+  0px 0px 10px #0ff0cc,
+  inset 0px 0px 5px #0ff0fc,
+  inset 0px 0px 10px #0ff0cc;
+  text-shadow: 0px 0px 5px #0ff0cc,
+   0px 0px 10px #0ff0cc,
+   0px 0px 15px #0ff0cc,
+   0px 0px 20px #0ff0cc;
+}
+.operators{
+  /* background: #fff; */
+  /* background-color: #00a6ff; */
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 5px #00a6ff,
+  0px 0px 10px #00a6ff,
+  inset 0px 0px 5px #00a6ff,
+  inset 0px 0px 10px #00a6ff;
+text-shadow: 0px 0px 5px #00a6ff,
+   0px 0px 10px #00a6ff,
+   0px 0px 15px #00a6ff,
+   0px 0px 20px #00a6ff;
+  transition: 0.5s;
+}
+.operators:hover{
+  background-color: #00a6ff;
+}
+.equal-btn{
+  width: 90px;
+  /* background: #7cff01; */
+  box-shadow: 0px 0px 5px #7cff01,
+  0px 0px 10px #7cff01,
+  inset 0px 0px 5px #7cff01,
+  inset 0px 0px 10px #7cff01;
+text-shadow: 0px 0px 5px #7cff01,
+   0px 0px 10px #7cff01,
+   0px 0px 15px #7cff01,
+   0px 0px 20px #7cff01;
+   transition: 0.5s;
+}
+.equal-btn:hover{
+  background-color: #7cff01;
+}
+.numbers{
+  /* background-color: #ff1178; */
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 5px #ff1178,
+  0px 0px 10px #ff1178,
+  inset 0px 0px 5px #ff1178,
+  inset 0px 0px 10px #ff1178;
+  text-shadow: 0px 0px 5px #ff1178,
+   0px 0px 10px #ff1178,
+   0px 0px 15px #ff1178,
+   0px 0px 20px #ff1178;
+   transition: 0.5s;
+}
+.numbers:hover{
+  background-color: #ff1178;
+}
+
+.zero2{
+  box-shadow: 0px 0px 5px #cc00ff,
+  0px 0px 10px #cc00ff,
+  inset 0px 0px 5px #cc00ff,
+  inset 0px 0px 10px #cc00ff;
+text-shadow: 0px 0px 5px #cc00ff,
+   0px 0px 10px #cc00ff,
+   0px 0px 15px #cc00ff,
+   0px 0px 20px #cc00ff;
+   transition: 0.5s;
+}
+.zero2:hover{
+  background-color: #cc00ff;
+}
+.ac,.de{
+    /* background-color: #ff1178; */
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 5px #ff7b02,
+    0px 0px 10px #ff7b02,
+    inset 0px 0px 5px #ff7b02,
+    inset 0px 0px 10px #ff7b02;
+    text-shadow: 0px 0px 5px #ff7b02,
+     0px 0px 10px #ff7b02,
+     0px 0px 15px #ff7b02,
+     0px 0px 20px #ff7b02;
+  transition: 0.5s;
+}
+.ac:hover,.de:hover{
+  background-color: #ff7b02;
+}
